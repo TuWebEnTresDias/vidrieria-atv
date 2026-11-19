@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Vidriería ATV: reemplazo de vidrios de ventanas, espejos y mamparas a medida, DVH, vidrieras, frentes en vidrio templado y vidriería en general.">
   <meta name="theme-color" content="#111711">
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" href="assets/atv-mark.svg" type="image/svg+xml">
+  <meta property="og:url" content="https://tuwebentresdias.github.io/vidrieria-atv/">
+  <meta property="og:image" content="https://tuwebentresdias.github.io/vidrieria-atv/assets/frente-comercial.jpg">
   <title>Vidriería ATV | Vidrios, espejos y mamparas a medida</title>
   <meta property="og:title" content="Vidriería ATV | Soluciones en vidrio">
   <meta property="og:description" content="Vidrios, espejos, mamparas, DVH, vidrieras y frentes en vidrio templado.">
   <meta property="og:type" content="website">
   <style>
-    :root{--ink:#111711;--ink-soft:#202820;--paper:#f4f6f1;--white:#fff;--muted:#687168;--green:#8fe044;--green-dark:#4f9b2e;--line:#dce3d8;--max:1200px;--pad:clamp(22px,5vw,76px);--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--serif:Georgia,"Times New Roman",serif}
+    :root{--ink:#111711;--ink-soft:#202820;--paper:#f4f6f1;--white:#fff;--muted:#687168;--green:#3dcb7a;--green-dark:#1f7047;--line:#dce3d8;--max:1200px;--pad:clamp(22px,5vw,76px);--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--serif:Georgia,"Times New Roman",serif}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:90px}
     body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
@@ -37,32 +41,33 @@
     .mobile-panel{position:absolute;top:48px;right:0;display:grid;min-width:185px;gap:4px;padding:13px;border:1px solid var(--line);border-radius:16px;background:var(--white);box-shadow:0 18px 42px rgba(17,23,17,.15)}
     .mobile-panel a{padding:9px 8px}
     .mobile-panel .nav-cta{margin-top:4px}
-    .hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 82% 15%,rgba(143,224,68,.15),transparent 31%),linear-gradient(135deg,#111711,#1d261d 66%,#111711);color:var(--white)}
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 82% 15%,rgba(61,203,122,.15),transparent 31%),linear-gradient(135deg,#111711,#1d261d 66%,#111711);color:var(--white)}
     .hero:before{position:absolute;z-index:-1;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:42px 42px;content:"";mask-image:linear-gradient(90deg,transparent,#000 55%)}
     .hero-inner{display:grid;grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);align-items:center;gap:clamp(38px,6vw,82px);min-height:min(760px,calc(100svh - 78px));padding-block:clamp(62px,8vw,112px)}
     .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 23px;color:var(--green);font-size:9px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
-    .eyebrow:before{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 18px rgba(143,224,68,.8);content:""}
+    .eyebrow:before{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 18px rgba(61,203,122,.8);content:""}
     h1,h2,h3,p{margin-top:0}
     h1{max-width:9.5ch;margin-bottom:22px;font-size:clamp(57px,7vw,92px);font-weight:760;line-height:.98;letter-spacing:-.085em}
     h1 em{color:var(--green);font-family:var(--serif);font-weight:400;letter-spacing:-.07em}
     .hero-copy>p:not(.eyebrow){max-width:480px;color:#d1d8ce;font-size:clamp(16px,1.5vw,19px);line-height:1.75}
     .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .icon{width:14px;height:14px;flex:0 0 auto;vertical-align:middle}
     .button{display:inline-flex;min-height:55px;align-items:center;justify-content:center;gap:12px;padding:0 21px;border:1px solid transparent;border-radius:999px;font-size:12px;font-weight:850;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
     .button:hover{transform:translateY(-3px)}
-    .button-primary{background:var(--green);color:var(--ink);box-shadow:0 10px 26px rgba(143,224,68,.19)}
-    .button-primary:hover{background:#a2f15c;box-shadow:0 14px 34px rgba(143,224,68,.26)}
+    .button-primary{background:var(--green);color:var(--ink);box-shadow:0 10px 26px rgba(61,203,122,.19)}
+    .button-primary:hover{background:#58e393;box-shadow:0 14px 34px rgba(61,203,122,.26)}
     .button-outline{border-color:rgba(255,255,255,.24);color:var(--white)}
     .button-outline:hover{background:rgba(255,255,255,.08)}
     .hero-note{margin:18px 0 0!important;color:#aeb8ad!important;font-size:10px!important}
     .hero-visual{position:relative;min-width:0;padding:0 12px 12px 0}
-    .hero-photo{position:relative;overflow:hidden;height:clamp(420px,45vw,610px);margin:0;border:1px solid rgba(255,255,255,.25);border-radius:28px 28px 100px 28px;background:#354237;box-shadow:18px 18px 0 rgba(143,224,68,.14)}
-    .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:54% center;filter:saturate(.73) contrast(1.04)}
+    .hero-photo{position:relative;overflow:hidden;height:clamp(420px,45vw,610px);margin:0;border:1px solid rgba(255,255,255,.25);border-radius:28px 28px 100px 28px;background:#354237;box-shadow:18px 18px 0 rgba(61,203,122,.14)}
+    .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:54% center;filter:saturate(.92) contrast(1.04)}
     .hero-photo:after{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.03) 45%,rgba(0,0,0,.7));content:""}
     .photo-label{position:absolute;z-index:1;right:18px;bottom:18px;left:18px;display:flex;align-items:end;justify-content:space-between;gap:10px;color:var(--white)}
     .photo-label strong{font-size:14px;letter-spacing:-.02em}
     .photo-label small{display:block;margin-top:3px;color:#d0d9cc;font-size:9px}
     .photo-index{color:var(--green);font-size:9px;font-weight:900;letter-spacing:.15em}
-    .hero-stamp{position:absolute;z-index:2;top:22px;right:0;display:grid;width:85px;height:85px;place-content:center;border:1px solid rgba(143,224,68,.55);border-radius:50%;background:var(--green);color:var(--ink);text-align:center;transform:rotate(8deg);box-shadow:0 9px 30px rgba(0,0,0,.22)}
+    .hero-stamp{position:absolute;z-index:2;top:22px;right:0;display:grid;width:85px;height:85px;place-content:center;border:1px solid rgba(61,203,122,.55);border-radius:50%;background:var(--green);color:var(--ink);text-align:center;transform:rotate(8deg);box-shadow:0 9px 30px rgba(0,0,0,.22)}
     .hero-stamp b{font-size:18px;line-height:1;letter-spacing:-.08em}
     .hero-stamp small{margin-top:5px;font-size:7px;font-weight:900;letter-spacing:.12em}
     .quickline{background:var(--green);color:var(--ink)}
@@ -72,28 +77,28 @@
     .section{padding-block:clamp(78px,9vw,126px)}
     .section-head{display:grid;grid-template-columns:1fr .8fr;align-items:end;gap:38px;margin-bottom:39px}
     .kicker{margin-bottom:12px;color:var(--green-dark);font-size:9px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
-    .section h2{max-width:11ch;margin-bottom:0;font-size:clamp(44px,6vw,74px);font-weight:760;line-height:1.02;letter-spacing:-.08em}
+    .section h2{max-width:13ch;margin-bottom:0;font-size:clamp(44px,6vw,74px);font-weight:760;line-height:1.02;letter-spacing:-.08em}
     .section-head>p{max-width:445px;margin:0 0 5px;color:var(--muted);font-size:14px;line-height:1.8}
     .services{background:var(--paper)}
     .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
     .service{position:relative;min-height:228px;padding:26px;border:1px solid var(--line);border-radius:19px;background:var(--white);transition:transform .24s,border-color .24s,box-shadow .24s}
-    .service:hover{transform:translateY(-5px);border-color:rgba(79,155,46,.45);box-shadow:0 18px 38px rgba(26,47,23,.08)}
+    .service:hover{transform:translateY(-5px);border-color:rgba(31,112,71,.45);box-shadow:0 18px 38px rgba(26,47,23,.08)}
     .service-num{display:grid;width:39px;height:39px;place-items:center;margin-bottom:25px;border-radius:13px;background:#edf7e7;color:var(--green-dark);font-size:10px;font-weight:900}
     .service h3{max-width:18ch;margin-bottom:9px;font-size:18px;line-height:1.2;letter-spacing:-.045em}
     .service p{max-width:310px;margin:0;color:var(--muted);font-size:12px;line-height:1.75}
     .photo-section{background:#e8ece4}
     .photo-section .section-head{margin-bottom:31px}
-    .photo-section .section-head h2{max-width:10ch}
+    .photo-section .section-head h2{max-width:13ch}
     .gallery-grid{display:grid;grid-template-columns:1.25fr .85fr .85fr;grid-template-rows:230px 190px;gap:13px}
     .gallery-card{position:relative;overflow:hidden;min-height:150px;margin:0;border-radius:18px;background:#c9d4c5;box-shadow:0 14px 35px rgba(21,34,19,.1)}
     .gallery-card:first-child{grid-row:span 2}
-    .gallery-card img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.76);transition:transform .55s,filter .35s}
-    .gallery-card:hover img{transform:scale(1.045);filter:saturate(.95)}
+    .gallery-card img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.9);transition:transform .55s,filter .35s}
+    .gallery-card:hover img{transform:scale(1.045);filter:saturate(1.02)}
     .gallery-card:after{position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(13,20,13,.72));content:""}
     .gallery-caption{position:absolute;z-index:1;right:12px;bottom:12px;left:12px;display:flex;align-items:end;justify-content:space-between;gap:9px;color:var(--white)}
     .gallery-caption strong{font-size:12px}
     .gallery-caption small{display:block;margin-top:3px;color:#d8dfd4;font-size:8px}
-    .reference-label{color:var(--green);font-size:8px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .work-label{color:var(--green);font-size:8px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
     .photo-note{margin:15px 0 0;color:#5f695e;font-size:10px;line-height:1.7}
     .photo-note a{font-weight:750;text-underline-offset:3px}
     .how{background:#fff}
@@ -106,7 +111,7 @@
     .check strong{display:block;margin-bottom:3px;font-size:14px}
     .check p{margin:0;color:var(--muted);font-size:12px}
     .contact{position:relative;overflow:hidden;background:var(--ink);color:var(--white)}
-    .contact:after{position:absolute;right:-130px;bottom:-210px;width:450px;height:450px;border:1px solid rgba(143,224,68,.25);border-radius:50%;box-shadow:0 0 0 34px rgba(143,224,68,.045),0 0 0 78px rgba(143,224,68,.025);content:"";pointer-events:none}
+    .contact:after{position:absolute;right:-130px;bottom:-210px;width:450px;height:450px;border:1px solid rgba(61,203,122,.25);border-radius:50%;box-shadow:0 0 0 34px rgba(61,203,122,.045),0 0 0 78px rgba(61,203,122,.025);content:"";pointer-events:none}
     .contact-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:35px}
     .contact h2{max-width:9ch;margin:0 0 16px;font-size:clamp(46px,6.5vw,78px);line-height:1;letter-spacing:-.08em}
     .contact h2 em{color:var(--green);font-family:var(--serif);font-weight:400}
@@ -123,7 +128,7 @@
     .mobile-whatsapp{display:none}
     :focus-visible{outline:3px solid var(--green-dark);outline-offset:3px}
     @media(max-width:900px){.hero-inner{gap:35px}.hero-photo{height:clamp(380px,48vw,520px)}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid{grid-template-rows:210px 165px}.quickline-inner{grid-template-columns:repeat(2,1fr);padding-block:14px}.contact-inner{grid-template-columns:1fr auto}}
-    @media(max-width:700px){.topbar-inner{min-height:68px}.desktop-nav{display:none}.mobile-menu{display:block}.hero-inner{grid-template-columns:1fr;gap:0;min-height:auto;padding-block:58px 54px}.hero-copy{max-width:570px}.hero h1{font-size:clamp(56px,13.5vw,78px)}.hero-visual{margin-top:35px;padding-right:8px}.hero-photo{height:330px;border-radius:22px 22px 80px 22px}.hero-stamp{top:10px;right:-2px;width:70px;height:70px}.hero-stamp b{font-size:15px}.hero-note{font-size:9px!important}.section{padding-block:70px}.section-head{grid-template-columns:1fr;gap:15px;margin-bottom:28px}.section h2{font-size:48px}.section-head>p{font-size:13px}.service-grid{grid-template-columns:1fr;gap:10px}.service{min-height:0;padding:21px;border-radius:16px}.service-num{margin-bottom:17px}.service h3{font-size:17px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 135px 135px;gap:9px}.gallery-card:first-child{grid-column:1/-1;grid-row:auto}.gallery-caption{right:9px;bottom:9px;left:9px}.gallery-caption strong{font-size:10px}.gallery-caption small{font-size:7px}.reference-label{font-size:7px}.photo-note{font-size:9px}.how-grid{grid-template-columns:1fr;gap:26px}.how h2{font-size:48px}.how-intro p{margin-top:13px;font-size:13px}.check{grid-template-columns:35px 1fr;padding:15px 0}.check strong{font-size:13px}.contact-inner{grid-template-columns:1fr;gap:25px}.contact h2{font-size:56px}.contact p{font-size:13px}.contact-actions{width:100%;max-width:330px}.footer-inner{align-items:flex-start;flex-direction:column;gap:8px;padding-block:19px}.mobile-whatsapp{position:fixed;z-index:40;right:14px;bottom:max(14px,env(safe-area-inset-bottom));left:14px;display:flex;min-height:51px;align-items:center;justify-content:center;gap:10px;border-radius:999px;background:var(--green);color:var(--ink);font-size:12px;font-weight:900;text-decoration:none;box-shadow:0 9px 32px rgba(0,0,0,.28)}body{padding-bottom:75px}}
+    @media(max-width:700px){.topbar-inner{min-height:68px}.desktop-nav{display:none}.mobile-menu{display:block}.hero-inner{grid-template-columns:1fr;gap:0;min-height:auto;padding-block:58px 54px}.hero-copy{max-width:570px}.hero h1{font-size:clamp(56px,13.5vw,78px)}.hero-visual{margin-top:35px;padding-right:8px}.hero-photo{height:330px;border-radius:22px 22px 80px 22px}.hero-stamp{top:10px;right:-2px;width:70px;height:70px}.hero-stamp b{font-size:15px}.hero-note{font-size:9px!important}.section{padding-block:70px}.section-head{grid-template-columns:1fr;gap:15px;margin-bottom:28px}.section h2{font-size:48px}.section-head>p{font-size:13px}.service-grid{grid-template-columns:1fr;gap:10px}.service{min-height:0;padding:21px;border-radius:16px}.service-num{margin-bottom:17px}.service h3{font-size:17px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 135px 135px;gap:9px}.gallery-card:first-child{grid-column:1/-1;grid-row:auto}.gallery-caption{right:9px;bottom:9px;left:9px}.gallery-caption strong{font-size:10px}.gallery-caption small{font-size:7px}.work-label{font-size:7px}.photo-note{font-size:9px}.how-grid{grid-template-columns:1fr;gap:26px}.how h2{font-size:48px}.how-intro p{margin-top:13px;font-size:13px}.check{grid-template-columns:35px 1fr;padding:15px 0}.check strong{font-size:13px}.contact-inner{grid-template-columns:1fr;gap:25px}.contact h2{font-size:56px}.contact p{font-size:13px}.contact-actions{width:100%;max-width:330px}.footer-inner{align-items:flex-start;flex-direction:column;gap:8px;padding-block:19px}.mobile-whatsapp{position:fixed;z-index:40;right:14px;bottom:max(14px,env(safe-area-inset-bottom));left:14px;display:flex;min-height:51px;align-items:center;justify-content:center;gap:10px;border-radius:999px;background:var(--green);color:var(--ink);font-size:12px;font-weight:900;text-decoration:none;box-shadow:0 9px 32px rgba(0,0,0,.28)}body{padding-bottom:75px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   </style>
 </head>
@@ -139,7 +144,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#fotos">Fotos</a>
         <a href="https://www.instagram.com/vidrieria_atv/" target="_blank" rel="noopener">Instagram</a>
-        <a class="nav-cta" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </nav>
       <details class="mobile-menu">
         <summary>Menú</summary>
@@ -147,7 +152,7 @@
           <a href="#servicios">Servicios</a>
           <a href="#fotos">Fotos</a>
           <a href="https://www.instagram.com/vidrieria_atv/" target="_blank" rel="noopener">Instagram</a>
-          <a class="nav-cta" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">WhatsApp ↗</a>
+          <a class="nav-cta" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">WhatsApp <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </nav>
       </details>
     </div>
@@ -161,15 +166,15 @@
           <h1>Vidrio a medida.<br><em>Espacios con otra luz.</em></h1>
           <p>Reemplazo de vidrios de ventanas, espejos y mamparas a medida, DVH, vidrieras, frentes en vidrio templado y vidriería en general.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Contanos qué necesitás <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="#servicios">Ver servicios <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Contanos qué necesitás <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="button button-outline" href="#servicios">Ver servicios <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14m-7-7 7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
           <p class="hero-note">Si tenés una foto del espacio, podés compartirla al escribirnos.</p>
         </div>
         <div class="hero-visual">
           <figure class="hero-photo">
-            <img src="assets/vidriero-medicion.jpg" alt="Imagen ilustrativa de una persona midiendo un panel de vidrio" fetchpriority="high" decoding="async">
-            <figcaption class="photo-label"><span><strong>Una buena base empieza por las medidas.</strong><small>Foto ilustrativa · Hanna Alves / Pexels</small></span><span class="photo-index">ATV / 01</span></figcaption>
+            <img src="assets/frente-comercial.jpg" alt="Frente vidriado de un local comercial realizado por Vidriería ATV" fetchpriority="high" decoding="async">
+            <figcaption class="photo-label"><span><strong>Frentes vidriados para comercios.</strong><small>Trabajo realizado por Vidriería ATV</small></span><span class="photo-index">ATV / 01</span></figcaption>
           </figure>
           <div class="hero-stamp" aria-label="Vidriería en general"><b>ATV</b><small>VIDRIERÍA</small></div>
         </div>
@@ -185,8 +190,8 @@
     <section class="section services" id="servicios">
       <div class="shell">
         <div class="section-head">
-          <div><p class="kicker">01 · Qué hacemos</p><h2>Soluciones en vidrio para cada proyecto.</h2></div>
-          <p>Estos son algunos de los trabajos que hace Vidriería ATV. Escribinos y contanos qué necesitás resolver.</p>
+          <div><p class="kicker">01 · Qué hacemos</p><h2>Cada proyecto pide su vidrio.</h2></div>
+          <p>Realizamos trabajos a medida para hogares y comercios. Escribinos y contanos qué necesitás resolver.</p>
         </div>
         <div class="service-grid">
           <article class="service"><span class="service-num">01</span><h3>Reemplazo de vidrios rotos</h3><p>Reemplazo de vidrios de ventanas. Una foto y las medidas aproximadas pueden ayudar a iniciar la consulta.</p></article>
@@ -203,17 +208,17 @@
     <section class="section photo-section" id="fotos">
       <div class="shell">
         <div class="section-head">
-          <div><p class="kicker">02 · Una primera mirada</p><h2>El estilo de ATV, con espacio para sus fotos.</h2></div>
-          <p>La identidad toma el negro y el verde del Instagram de Vidriería ATV. Estas imágenes son ilustrativas; la galería se completa con fotos de sus trabajos cuando estén listas.</p>
+          <div><p class="kicker">02 · Trabajos reales</p><h2>Trabajos de Vidriería ATV.</h2></div>
+          <p>Una selección de espejos, mamparas y frentes comerciales realizados por Vidriería ATV.</p>
         </div>
         <div class="gallery-grid">
-          <figure class="gallery-card"><img src="assets/espejo-bano.jpg" alt="Imagen ilustrativa de un espejo en un baño" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Espejos</strong><small>Referencia visual</small></span><span class="reference-label">Ilustrativa</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/mampara.jpg" alt="Imagen ilustrativa de una mampara en un baño" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Mamparas</strong><small>Referencia visual</small></span><span class="reference-label">Ilustrativa</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/puertas-vidrio.jpg" alt="Imagen ilustrativa de puertas de vidrio en un ambiente interior" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Vidrio templado</strong><small>Referencia visual</small></span><span class="reference-label">Ilustrativa</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/division-vidrio.jpg" alt="Imagen ilustrativa de una división interior de vidrio" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Divisiones</strong><small>Referencia visual</small></span><span class="reference-label">Ilustrativa</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/cerramiento.jpg" alt="Imagen ilustrativa de un acceso interior con vidrio" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Cerramientos</strong><small>Referencia visual</small></span><span class="reference-label">Ilustrativa</span></figcaption></figure>
+          <figure class="gallery-card"><img src="assets/mampara-banera.jpg" alt="Mampara de vidrio instalada sobre una bañera en un baño revestido" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Mampara sobre bañera</strong><small>Trabajo realizado por ATV</small></span><span class="work-label">ATV</span></figcaption></figure>
+          <figure class="gallery-card"><img src="assets/espejo-circular.jpg" alt="Espejo circular instalado en un baño con revestimiento oscuro" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Espejo circular</strong><small>Trabajo realizado por ATV</small></span><span class="work-label">ATV</span></figcaption></figure>
+          <figure class="gallery-card"><img src="assets/instalacion-vidriera.jpg" alt="Equipo de Vidriería ATV trabajando en la instalación de un frente vidriado" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Frente comercial</strong><small>Instalación en curso</small></span><span class="work-label">ATV</span></figcaption></figure>
+          <figure class="gallery-card"><img src="assets/espejo-a-medida.jpg" alt="Espejo rectangular a medida colocado en un ambiente interior" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Espejo a medida</strong><small>Trabajo realizado por ATV</small></span><span class="work-label">ATV</span></figcaption></figure>
+          <figure class="gallery-card"><img src="assets/mampara-ducha.jpg" alt="Mampara de vidrio instalada en un baño con ventana arqueada" loading="lazy" decoding="async"><figcaption class="gallery-caption"><span><strong>Mampara de ducha</strong><small>Trabajo realizado por ATV</small></span><span class="work-label">ATV</span></figcaption></figure>
         </div>
-        <p class="photo-note"><strong>Las imágenes no representan trabajos de ATV.</strong> Son referencias visuales de Pexels. Créditos: <a href="https://www.pexels.com/photo/industrial-worker-measuring-glass-with-precision-28812390/" target="_blank" rel="noopener">Hanna Alves</a>, <a href="https://www.pexels.com/photo/mirror-inside-a-bathroom-8681047/" target="_blank" rel="noopener">Ksu&amp;Eli Studio</a> y <a href="https://www.pexels.com/photo/glass-door-in-room-8092202/" target="_blank" rel="noopener">Max Vakhtbovych</a>.</p>
+        <p class="photo-note">Fotos compartidas por Vidriería ATV.</p>
       </div>
     </section>
 
@@ -232,7 +237,7 @@
       <div class="shell contact-inner">
         <div><p class="kicker">04 · Contacto</p><h2>Hablemos de tu <em>proyecto.</em></h2><p>Escribinos por WhatsApp para consultar por vidrios, espejos, mamparas, DVH, vidrieras o un trabajo de vidriería en general.</p></div>
         <div class="contact-actions">
-          <a class="button button-primary" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="instagram-link" href="https://www.instagram.com/vidrieria_atv/" target="_blank" rel="noopener">También estamos en Instagram · @vidrieria_atv</a>
         </div>
       </div>
@@ -243,9 +248,9 @@
     <div class="shell footer-inner">
       <span class="footer-brand">VIDRIERÍA ATV</span>
       <p>Vidrios · espejos · mamparas · DVH · vidriería en general</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <a href="#inicio">Volver arriba <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </footer>
-  <a class="mobile-whatsapp" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp ↗</a>
+  <a class="mobile-whatsapp" href="https://wa.me/5491126969581?text=Hola%2C%20quiero%20consultar%20por%20un%20trabajo%20de%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por WhatsApp <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </body>
 </html>
